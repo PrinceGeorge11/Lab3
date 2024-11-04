@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#014ea7, #ffffff8f);
+  }
+  
+  .tip-calculator {
+    background: linear-gradient(#014ea7c4, #ffffff8f);
+    padding: 25px;
+    border: 6px solid #012b58;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(50, 132, 253, 0.856);
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    color: #f3f3f3;
+    margin-top: 12px;
+  }
+
+p {
+    font-size: 0.8em;
+    color: #3a3a3a;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #022246;
+    margin-top: 10px;
+  }
+  
+  input[type="number"], input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.253);
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  input[disabled] {
+    background-color: #e9ecef;
+    color: #292929;
+    box-shadow: 0 5px 5px rgba(83, 83, 83, 0.521);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: solid 3px white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .results {
+    margin-top: 15px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  p.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  

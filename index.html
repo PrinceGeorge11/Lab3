@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince's Tip Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tip-calculator">
+    <h1>Tip Calculator</h1>
+    <form id="tipForm">
+      <!-- Bill Total Field -->
+      <label for="billAmount">Total Bill ($):</label>
+      <input type="number" id="billAmount" placeholder="Enter bill amount" required>
+
+      <!-- Tip Percentage Slider -->
+      <label for="tipPercentage">Tip Percentage (%):</label>
+      <input type="range" id="tipPercentage" min="0" max="100" value="15">
+      <span id="tipPercentageDisplay" style="font: 1.6em bolder; color: white;">15%</span>
+
+      <!-- Currency Dropdown -->
+      <label for="currency">Select Tip Currency:</label>
+      <select id="currency">
+        <option value="1" selected>Dollar ($)</option>
+        <option value="151.77">Yen (¥)</option>
+        <option value="84.03">Rupee (₹)</option>
+      </select>
+
+      <!-- Disabled Output Fields -->
+      <label for="tipAmount">Tip Amount:</label>
+      <input type="text" id="tipAmount" disabled>
+
+      <label for="totalAmount">Total Bill with Tip:</label>
+      <input type="text" id="totalAmount" disabled>
+    </form>
+    <p>Powered by <strong>Prince George</strong></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
